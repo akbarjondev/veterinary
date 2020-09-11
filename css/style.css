@@ -1,31 +1,34 @@
 /*fonts*/
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v17-latin-regular.woff2") format("woff2"),
-       url("../fonts/open-sans-v17-latin-regular.woff") format("woff");
+    font-family: "Futura PT";
+    src: url("fonts/FuturaPT-Bold.woff2") format("woff2"),
+        url("fonts/FuturaPT-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/open-sans-v17-latin-600.woff2") format("woff2"),
-       url("../fonts/open-sans-v17-latin-600.woff") format("woff");
+    font-family: "Futura PT";
+    src: url("fonts/FuturaPT-Light.woff2") format("woff2"),
+        url("fonts/FuturaPT-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/open-sans-v17-latin-700.woff2") format("woff2"),
-       url("../fonts/open-sans-v17-latin-700.woff") format("woff");
+    font-family: "Futura PT";
+    src: url("fonts/FuturaPT-Medium.woff2") format("woff2"),
+        url("fonts/FuturaPT-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 /*general styles*/
 .body {
 	margin: 0;
 	padding: 0;
-	font-family: "Open Sans", "Arial", sans-serif;
+	font-family: "Futura PT", "Arial", sans-serif;
   box-sizing: border-box;
 }
 *,
