@@ -38,7 +38,8 @@
   --main-gray: #949494;
   --main-yellow: #ffbd54;
   --main-blue: #78c0de;
-  --bg-color: #e5e5e5;
+  --main-white: #ffffff;
+  --bg-color: #f9f9f9;
   --bg-footer: #f3f3f3;
 }
 .body {
@@ -106,11 +107,15 @@
   }
 .header-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-left: 106px;
   padding: 0;
   list-style-type: none;
 }
+  .header-list:hover .header-link {
+    color: var(--main-yellow);
+  }
 .header-item {
   display: flex;
   align-items: center;
@@ -178,6 +183,108 @@
 
 /*site-nav*/
 .site-nav {
-  background-color: #ffffff;
+  background-color: var(--main-white);
   border: 1px solid #f3f3f3;
 }
+.nav-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-wrapper {
+  flex-shrink: 0;
+  width: 178px;
+}
+.logo-link {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  .logo-link:hover {
+    opacity: 0.8;
+  }
+  .logo-link:active {
+    opacity: 0.5;
+  }
+.logo {
+  display: block;
+  width: 178px;
+  height: 86px;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 0;
+  list-style-type: none;
+}
+.nav-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 1px;
+}
+.nav-item:last-child {
+  margin: 0;
+}
+.nav-item--active {
+  position: relative;
+}
+.nav-item--active::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  background-image: url("../img/active-icon.svg");
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nav-link {
+  padding: 20px 27px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--main-black);
+  text-decoration: none;
+}
+  .nav-link:hover {
+    background-color: var(--main-yellow);
+  }
+  .nav-link:active {
+    opacity: 0.5;
+  }
+.ask-question-link {
+  display: flex;
+  align-items: center;
+  padding: 19px 27px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--main-black);
+  text-decoration: none;
+}
+  .ask-question-link::before {
+    content: "";
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;  
+    background-image: url("../img/pet-foot-icon.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .ask-question-link:hover {
+    color: var(--main-white);
+    background-color: var(--main-black);
+  }
+  .ask-question-link:active {
+    opacity: 0.5;
+  }
+
