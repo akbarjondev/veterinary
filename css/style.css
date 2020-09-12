@@ -72,6 +72,33 @@
 .strong {
   font-weight: 700;
 }
+.blue-text {
+  color: var(--main-blue);
+}
+.main-black-button {
+  padding: 15px 48px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--main-white);
+  background-color: var(--main-black);
+  border-radius: 3px;
+}
+  .main-black-button:hover {
+    color: var(--main-black);
+    background-color: var(--main-yellow);
+  }
+  .main-black-button:active {
+    opacity: 0.5;
+  }
+.gray-line {
+  display: block;
+  width: 140px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #dbdbdb;
+}
 
 /*body*/
 /*header*/
@@ -215,6 +242,7 @@
 .nav-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 760px;
   margin: 0;
   margin-right: 15px;
   margin-left: 15px;
@@ -288,3 +316,225 @@
     opacity: 0.5;
   }
 
+/*site-main*/
+.site-main {
+  background-image: url("../img/bg-img.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top left;
+}
+
+/*hero*/
+.hero {
+  
+  padding-top: 145px;
+  padding-bottom: 290px;
+  background-image: url("../img/all.png"), url("../img/toti.png");
+  background-repeat: no-repeat, no-repeat;
+  -webkit-background-size: 653px 835px, 239px 430px;
+  background-size: 653px 835px, 239px 430px;
+  background-position: top -100px left, bottom -45px right;
+}
+.hero-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero__right {
+  width: 620px;
+}
+.hero__heading {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--main-black);
+}
+.hero__text {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--main-gray);
+}
+
+/*quote*/
+.quote {
+  padding-top: 30px;
+  padding-bottom: 190px;
+}
+.quote-wrapper {
+  position: relative;
+  width: 755px;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+  .quote-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60px;
+    display: inline-block;
+    width: 49px;
+    height: 41px;
+    background-image: url("../img/quote-left.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;   
+  }
+  .quote-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -60px;
+    display: inline-block;
+    width: 49px;
+    height: 41px;
+    background-image: url("../img/quote-right.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;   
+  }
+.quote__text {
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--main-gray);
+  text-align: center;
+}
+.quote__manager {
+  margin-top: 35px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--main-black);
+}
+
+/*services*/
+.list-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.left-button,
+.right-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.left-button {
+  margin-right: 30px;
+}
+.right-button {
+  margin-left: 30px;
+}
+.services {
+  padding-bottom: 235px;
+}
+.services__heading {
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 48px;
+  line-height: 20px;
+  color: var(--main-black);
+  text-align: center;
+}
+.services__list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+.services__item {
+  flex-shrink: 0;
+  width: 193px;
+  padding: 30px 35px;
+  margin-right: 13px;
+  background: var(--main-white);
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  text-align: center;
+}
+.services__item:last-child {
+  margin: 0;
+}
+.services__link {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--main-black);
+  text-decoration: none;
+}
+.link-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-text::before {
+  content: "";
+  width: 77px;
+  height: 77px;
+  margin-bottom: 22px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+}
+.doctor-male::before {
+  background-image: url("../img/doctor-male.png");
+}
+.dog-with-female::before {
+  background-image: url("../img/dog-with-female.png");
+}
+.dog-injection::before {
+  background-image: url("../img/dog-injection.png");
+}
+.dog-lupa::before {
+  background-image: url("../img/dog-lupa.png");
+}
+.micro::before {
+  background-image: url("../img/micro.png");
+}
+.two-dog::before {
+  background-image: url("../img/two-dog.png");
+}
+.uzi::before {
+  background-image: url("../img/uzi.png");
+}
+.injection::before {
+  background-image: url("../img/injection.png");
+}
+.calendar::before {
+  background-image: url("../img/calendar.png");
+}
+.pills::before {
+  background-image: url("../img/pills.png");
+}
+.teeth::before {
+  background-image: url("../img/teeth.png");
+}
+.med-kit::before {
+  background-image: url("../img/med-kit.png");
+}
+
+
+/*background-image uchun media*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/all@2x.png"), url("../img/toti@2x.png");
+    background-repeat: no-repeat, no-repeat;
+    -webkit-background-size: 653px 835px, 239px 430px;
+    background-size: 653px 835px, 239px 430px;
+    background-position: top -100px left, bottom -45px right;
+  }
+}
