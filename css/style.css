@@ -605,6 +605,7 @@
 /*subs*/
 .subs {
   position: relative;
+  margin-bottom: 150px;
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #78c0de;
@@ -653,6 +654,14 @@
   position: absolute;
   top: -69px;
   right: 0;
+}
+
+/*useful*/
+.useful__heading {
+  font-size: 48px;
+  line-height: 20px;
+  color: var(--main-black);
+  text-align: center;
 }
 
 /*background-image uchun media*/
