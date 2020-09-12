@@ -119,7 +119,7 @@
 }
 
 /*body*/
-/*header*/
+/*site-header*/
 .site-address-tel {
   background-color: #f9f8f8;
 }
@@ -654,8 +654,6 @@
   top: -69px;
   right: 0;
 }
-
-
 
 /*background-image uchun media*/
 @media
