@@ -102,9 +102,9 @@
 				<h2 class="services__heading">Наши услуги</h2>
 				
 				<div class="list-wrapper">
-					<button class="left-button"><img class="arrow-left" src="img/arrow-left.svg" alt="Prev"></button>
+					<button class="left-button arrows"><img class="arrow-left" src="img/arrow-left.svg" alt="Prev"></button>
 					<ul class="services__list">
-						<li class="services__item">
+						<li class="services__item services__item--active">
 							<a class="services__link" href="services.html">
 								<span class="link-text doctor-male">Первичный осмотр</span>
 							</a>
@@ -176,14 +176,47 @@
 							</a>
 						</li>
 					</ul><!-- End of services-list -->
-					<button class="right-button"><img class="arrow-right" src="img/arrow-right.svg" alt="Next"></button>
+					<button class="right-button arrows"><img class="arrow-right" src="img/arrow-right.svg" alt="Next"></button>
 				</div><!-- End of list-wrapper -->
 				
-				<article class="services__article">
-					
+				<article class="articles">
+					<section class="articles-left">
+						<h3 class="articles__heading">Первичный осмотр</h3>
+						<article class="articles__body">
+							<p class="articles__text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+							<p class="articles__text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+						</article>
+						<a class="articles__link main-yellow-button" href="prices.html">
+							<img class="articles__icon" src="img/money.svg" width="21" height="21" alt="Money icon">
+							Узнать цену
+						</a>
+						<a class="articles__link main-black-button" href="appointment.html">
+							<img class="articles__icon" src="img/document.svg" width="21" height="21" alt="Money icon">
+							Записаться на приём
+						</a>
+					</section>
+
+					<img class="services__article-img" src="img/meow.jpg" srcset="img/meow.jpg 1x, img/meow@2x.jpg 2x" alt="Yellow cat" aria-hidden="true" width="524" height="329">
 				</article>
 			</section><!-- End of services -->
 		</div><!-- End of container -->
+		
+		<section class="subs">
+			<div class="container subs-container">
+				<div class="form-wrapper">
+					<h2 class="subs__heading">Будь в курсе событий</h2>
+
+					<form class="subs-form" action="https://echo.htmlacademy.ru" method="POST">
+						<div class="input-wrapper">
+							<label class="visually-hidden" for="email">Your email</label>
+							<input class="subs__email" name="email" id="email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required type="email" placeholder="Укажите Ваш email адрес">
+						</div>
+						<button class="subs__button main-black-button" type="submit">Подписаться</button>
+					</form>
+				</div><!-- End of form-wrapper -->
+				<img class="subs__puppy" src="img/puppy.png" srcset="img/puppy.png 1x, img/puppy@2x.png 2x" alt="Puppy" width="613" height="481">
+			</div><!-- End of conatiner -->
+		</section><!-- End of subscription -->
 
 	</main><!-- End of site-main -->
 
