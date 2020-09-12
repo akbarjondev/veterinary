@@ -1,17 +1,17 @@
 /*fonts*/
 @font-face {
     font-family: "Futura PT";
-    src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
-        url("../fonts/FuturaPT-Bold.woff") format("woff");
-    font-weight: 700;
+    src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+        url("../fonts/FuturaPT-Light.woff") format("woff");
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Futura PT";
-    src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
-        url("../fonts/FuturaPT-Light.woff") format("woff");
-    font-weight: 300;
+    src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+        url("../fonts/FuturaPT-Book.woff") format("woff");
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -23,13 +23,30 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+        url("../fonts/FuturaPT-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 /*general styles*/
+:root {
+  --main-black: #333333;
+  --main-gray: #949494;
+  --main-yellow: #ffbd54;
+  --main-blue: #78c0de;
+  --bg-color: #e5e5e5;
+  --bg-footer: #f3f3f3;
+}
 .body {
 	margin: 0;
 	padding: 0;
 	font-family: "Futura PT", "Arial", sans-serif;
   box-sizing: border-box;
+  background-color: var(--bg-color);
 }
 *,
 *::before,
@@ -46,8 +63,121 @@
   width: 1px !important; 
   overflow: hidden;
 }
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.strong {
+  font-weight: 700;
+}
 
 /*body*/
-p {
-  font-weight: 300;
+/*header*/
+.site-address-tel {
+  background-color: #f9f8f8;
+}
+.address-tel-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.site-address {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--main-black);
+}
+  .site-address::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    margin-right: 9px;
+    background-image: url("../img/home-icon.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+  }
+.header-list {
+  display: flex;
+  margin: 0;
+  margin-left: 106px;
+  padding: 0;
+  list-style-type: none;
+}
+.header-item {
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+}
+.header-item:last-child {
+  margin: 0;
+}
+  .header-item--tel::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    margin-right: 9px;
+    background-image: url("../img/tel-icon.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .header-item--dot::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    margin-right: 9px;
+    background-image: url("../img/dot-icon.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.header-link {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--main-black);
+  text-decoration: none;
+}
+
+.work-time-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 98px;
+}
+  .work-time-wrapper::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    background-image: url("../img/schedule-icon.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.work-time {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--main-black);
+}
+.work-time:last-child {
+  margin-left: 17px;
+}
+
+/*site-nav*/
+.site-nav {
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
 }
