@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Veterinary Clinic</title>
 
-	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
 </head>
 <body class="body">
 	<header class="site-header">
@@ -102,7 +102,10 @@
 				<h2 class="services__heading">Наши услуги</h2>
 				
 				<div class="list-wrapper">
-					<button class="left-button arrows"><img class="arrow-left" src="img/arrow-left.svg" alt="Prev"></button>
+					<button class="left-button arrows">
+						<span class="visually-hidden">Prev</span>
+						<img class="arrow-left" src="img/arrow-left.svg" alt="Prev">
+					</button>
 					<ul class="services__list">
 						<li class="services__item services__item--active">
 							<a class="services__link" href="services.html">
@@ -176,7 +179,10 @@
 							</a>
 						</li>
 					</ul><!-- End of services-list -->
-					<button class="right-button arrows"><img class="arrow-right" src="img/arrow-right.svg" alt="Next"></button>
+					<button class="right-button arrows">
+						<span class="visually-hidden">Next</span>
+						<img class="arrow-right" src="img/arrow-right.svg" alt="Next">
+					</button>
 				</div><!-- End of list-wrapper -->
 				
 				<div class="articles">
@@ -222,17 +228,73 @@
 			<section class="useful">
 				<h2 class="useful__heading">Полезные статьи</h2>
 				<div class="useful__body">
+					
 					<article class="useful__article article-small">
-						<h3 class="article-small__heading">Ультразвуковая чистка зубов</h3>
 						<img class="article-small__img" src="img/news-cat.jpg" srcset="img/news-cat.jpg 1x, img/news-cat@2x.jpg 2x" alt="Ультразвуковая чистка зубов" width="305" height="180">
-						<time class="article-small__time" datetime="2020-08-28">28.08.2020</time>
-						<p class="article-small__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+						<div class="article-small__wrapper">
+							<h3 class="article-small__heading">Ультразвуковая чистка зубов</h3>
+							<time class="article-small__time" datetime="2020-08-28">28.08.2020</time>
+							<p class="article-small__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
 
-						<a class="article-small__more" href="#">Читать больше</a>
+							<a class="article-small__more" href="#">Читать больше</a>
+						</div>
 					</article>
-				</div>
+
+					<article class="useful__article article-big">
+						<img class="article-big__img" src="img/running-dogs.jpg" srcset="img/running-dogs.jpg 1x, img/running-dogs@2x.jpg 2x" alt="Ультразвуковая чистка зубов" width="305" height="180" aria-hidden="true">
+						<div class="article-big__wrapper">
+							<h3 class="article-big__heading">Перед тем как завести собаку</h3>
+							<div class="time-hash">
+								<a class="article-hash" href="#">#собака</a>
+								<a class="article-hash" href="#">#дом</a>
+								<a class="article-hash" href="#">#уход</a>
+								<time class="article-big__time article-small__time" datetime="2020-08-29">29.08.2020</time>
+							</div>
+							<p class="article-big__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.</p>
+
+							<a class="article-small__more" href="#">Читать больше</a>
+						</div>
+					</article>
+
+					<article class="useful__article article-small">
+						<img class="article-small__img" src="img/yellow-puppy.jpg" srcset="img/yellow-puppy.jpg 1x, img/yellow-puppy@2x.jpg 2x" alt="Ультразвуковая чистка зубов" width="305" height="180">
+						<div class="article-small__wrapper">
+							<h3 class="article-small__heading">Когда привавать питомца?</h3>
+							<time class="article-small__time" datetime="2020-07-21">21.07.2020</time>
+							<p class="article-small__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+
+							<a class="article-small__more" href="#">Читать больше</a>
+						</div>
+					</article>
+				</div><!-- End of useful__body -->
 			</section><!-- End of useful -->
 		</div><!-- End of container -->
+
+		<div class="call-back">
+			<div class="yan-map">
+				<a class="yan-map__link" href="https://yandex.com/maps/-/CCQxVGfz2C">
+					<img class="yan-map__img" src="img/map.png" srcset="img/map.png 1x, img/map@2x.png 2x" alt="Map yandex" width="458" height="652">
+				</a>
+			</div><!-- End of yan-map -->
+			<div class="call-back__form-wrapper">
+				<form class="call-back__form" action="https://echo.htmlacademy.ru" method="POST">
+					<h3 class="form-heading">Обратная связь</h3>
+					<p class="form-text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+					<div class="input-rapper">
+						<label class="visually-hidden" for="name">Ваше имя</label>
+						<input class="form-input" type="text" name="name" id="name" required placeholder="Ваше имя">
+					</div>
+					<div class="input-rapper">
+						<label class="visually-hidden" for="email">Email для обратной связи</label>
+						<input class="form-input" type="text" name="email" id="email" required placeholder="Email для обратной связи">
+					</div>
+					<label class="visually-hidden" for="text">Опишите Ваш вопрос.</label>
+					<textarea class="form-textarea" name="text" id="text" minlength="3" cols="30" placeholder="Например: в каком возрасте можно прививать от бешенства?">Опишите Ваш вопрос.Например: в каком возрасте можно прививать от бешенства?</textarea>
+
+					<button class="call-back__button main-yellow-button" type="submit">Задать нам вопрос</button>
+				</form>
+			</div>
+		</div><!-- End of call-back -->
 	</main><!-- End of site-main -->
 
 	<script src="js/script.js"></script>
