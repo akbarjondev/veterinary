@@ -215,7 +215,7 @@
 					<form class="subs-form" action="https://echo.htmlacademy.ru" method="POST">
 						<div class="input-wrapper">
 							<label class="visually-hidden" for="email">Your email</label>
-							<input class="subs__email" name="email" id="email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required type="email" placeholder="Укажите Ваш email адрес">
+							<input class="subs__email subs__email--frame" name="email" id="email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required type="email" placeholder="Укажите Ваш email адрес">
 						</div>
 						<button class="subs__button main-black-button" type="submit">Подписаться</button>
 					</form>
@@ -272,7 +272,7 @@
 
 		<div class="call-back">
 			<div class="yan-map">
-				<a class="yan-map__link" href="https://yandex.com/maps/-/CCQxVGfz2C">
+				<a class="yan-map__link" target="_blank" href="https://yandex.com/maps/-/CCQxVGfz2C">
 					<img class="yan-map__img" src="img/map.png" srcset="img/map.png 1x, img/map@2x.png 2x" alt="Map yandex" width="458" height="652">
 				</a>
 			</div><!-- End of yan-map -->
@@ -282,14 +282,17 @@
 					<p class="form-text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
 					<div class="input-rapper">
 						<label class="visually-hidden" for="name">Ваше имя</label>
-						<input class="form-input" type="text" name="name" id="name" required placeholder="Ваше имя">
+						<input class="form-input subs__email--frame" type="text" name="name" id="name" required placeholder="Ваше имя">
 					</div>
 					<div class="input-rapper">
 						<label class="visually-hidden" for="call-email">Email для обратной связи</label>
-						<input class="form-input" type="text" name="email" id="call-email" required placeholder="Email для обратной связи">
+						<input class="form-input subs__email--frame" type="text" name="email" id="call-email" required placeholder="Email для обратной связи" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
 					</div>
 					<label class="visually-hidden" for="text">Опишите Ваш вопрос.</label>
-					<textarea class="form-textarea" name="text" id="text" minlength="3" cols="30" placeholder="Например: в каком возрасте можно прививать от бешенства?">Опишите Ваш вопрос.Например: в каком возрасте можно прививать от бешенства?</textarea>
+					<div class="textarea-wrapper">
+						<textarea class="form-textarea" name="text" id="text" minlength="3" cols="30" ></textarea>
+						<span class="textarea-label"><span class="black-text">Опишите Ваш вопрос.</span> Например: в каком возрасте можно прививать от бешенства?</span>
+					</div>
 
 					<button class="call-back__button main-yellow-button" type="submit">Задать нам вопрос</button>
 				</form>
@@ -305,45 +308,47 @@
 
 					<ul class="footer-list">
 						<li class="footer-item">
-							<a href="index.html" class="footer-link">Главная</a>
+							<a class="footer-link" href="index.html">Главная</a>
 						</li>
 						<li class="footer-item">
-							<a href="index.html" class="footer-link">О Клинике</a>
+							<a class="footer-link" href="index.html">О Клинике</a>
 						</li>
 						<li class="footer-item">
-							<a href="index.html" class="footer-link">Наши Услуги</a>
+							<a class="footer-link" href="index.html">Наши Услуги</a>
 						</li>
 					</ul><!-- End of footer-list -->
 
 					<ul class="footer-list">
 						<li class="footer-item">
-							<a href="index.html" class="footer-link">Полезные Статьи</a>
+							<a class="footer-link" href="index.html">Полезные Статьи</a>
 						</li>
 						<li class="footer-item">
-							<a href="index.html" class="footer-link">FAQ</a>
+							<a class="footer-link" href="index.html">FAQ</a>
 						</li>
 						<li class="footer-item">
-							<a href="index.html" class="footer-link">Контакты</a>
+							<a class="footer-link" href="index.html">Контакты</a>
 						</li>
 					</ul><!-- End of footer-list -->
 
-					<div class="work-time-wrapper work-time-wrapper-footer">
-						<p class="work-time"><span class="strong">Пн - Пт</span> 8:00 - 18:00</p>
-						<p class="work-time"><span class="strong">Сб - Вс</span> 8:00 - 14:00</p>
+					<div class="work-time-wrapper-footer">
+						<div>
+							<p class="work-time-footer"><span class="strong">Пн - Пт</span> 8:00 - 18:00</p>
+							<p class="work-time-footer"><span class="strong">Сб - Вс</span> 8:00 - 14:00</p>
+						</div>
 					</div><!-- End of work-time-wrapper -->
 
-					<address class="site-address">г. Мариуполь, проспект Победы, 48а</address>
+					<address class="site-address site-address-footer">г. Мариуполь,<br> проспект Победы, 48а</address>
 
-					<ul class="header-list">
-						<li class="header-item header-item--tel">
+					<ul class="header-list header-list-footer">
+						<li class="header-item header-item-footer header-item--tel">
 							<a class="header-link" href="tel:+0676347574">(067) 634-75-74</a>
 						</li>
 
-						<li class="header-item header-item--dot">
+						<li class="header-item header-item-footer">
 							<a class="header-link" href="tel:+0637570131">(0637) 57-01-31</a>
 						</li>
 
-						<li class="header-item header-item--dot">
+						<li class="header-item header-item-footer">
 							<a class="header-link" href="tel:+0982664389">(098) 266-43-89</a>
 						</li>
 					</ul><!-- End of header-list -->
