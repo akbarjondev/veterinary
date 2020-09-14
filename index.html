@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Veterinary Clinic</title>
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
 	<header class="site-header">
@@ -285,8 +285,8 @@
 						<input class="form-input" type="text" name="name" id="name" required placeholder="Ваше имя">
 					</div>
 					<div class="input-rapper">
-						<label class="visually-hidden" for="email">Email для обратной связи</label>
-						<input class="form-input" type="text" name="email" id="email" required placeholder="Email для обратной связи">
+						<label class="visually-hidden" for="call-email">Email для обратной связи</label>
+						<input class="form-input" type="text" name="email" id="call-email" required placeholder="Email для обратной связи">
 					</div>
 					<label class="visually-hidden" for="text">Опишите Ваш вопрос.</label>
 					<textarea class="form-textarea" name="text" id="text" minlength="3" cols="30" placeholder="Например: в каком возрасте можно прививать от бешенства?">Опишите Ваш вопрос.Например: в каком возрасте можно прививать от бешенства?</textarea>
@@ -295,6 +295,63 @@
 				</form>
 			</div>
 		</div><!-- End of call-back -->
+
+		<footer class="site-footer">
+			<div class="container footer-container">
+				<div class="footer-top">
+					<a class="footer-logo-link" href="index.html">
+						<img class="footer-logo" src="img/logo.svg" width="178" height="86" alt="Veterinary Clinic logo">
+					</a>
+
+					<ul class="footer-list">
+						<li class="footer-item">
+							<a href="index.html" class="footer-link">Главная</a>
+						</li>
+						<li class="footer-item">
+							<a href="index.html" class="footer-link">О Клинике</a>
+						</li>
+						<li class="footer-item">
+							<a href="index.html" class="footer-link">Наши Услуги</a>
+						</li>
+					</ul><!-- End of footer-list -->
+
+					<ul class="footer-list">
+						<li class="footer-item">
+							<a href="index.html" class="footer-link">Полезные Статьи</a>
+						</li>
+						<li class="footer-item">
+							<a href="index.html" class="footer-link">FAQ</a>
+						</li>
+						<li class="footer-item">
+							<a href="index.html" class="footer-link">Контакты</a>
+						</li>
+					</ul><!-- End of footer-list -->
+
+					<div class="work-time-wrapper work-time-wrapper-footer">
+						<p class="work-time"><span class="strong">Пн - Пт</span> 8:00 - 18:00</p>
+						<p class="work-time"><span class="strong">Сб - Вс</span> 8:00 - 14:00</p>
+					</div><!-- End of work-time-wrapper -->
+
+					<address class="site-address">г. Мариуполь, проспект Победы, 48а</address>
+
+					<ul class="header-list">
+						<li class="header-item header-item--tel">
+							<a class="header-link" href="tel:+0676347574">(067) 634-75-74</a>
+						</li>
+
+						<li class="header-item header-item--dot">
+							<a class="header-link" href="tel:+0637570131">(0637) 57-01-31</a>
+						</li>
+
+						<li class="header-item header-item--dot">
+							<a class="header-link" href="tel:+0982664389">(098) 266-43-89</a>
+						</li>
+					</ul><!-- End of header-list -->
+				</div><!-- End of footer-top -->
+				
+				<p class="footer-bottom">&copy; 2020 example. All Rights Reserved.</p>
+			</div><!-- End of container -->
+		</footer><!-- End of footer -->
 	</main><!-- End of site-main -->
 
 	<script src="js/script.js"></script>
